@@ -22,6 +22,8 @@ namespace SE2Toets_PimJanissen
 
             cbNieuweVerhuring.DataSource = this.GetCBVerhuringValues();
             cbNieuweVerkoop.DataSource = this.GetCBVerkoopValues();
+
+            cbOverzichtBTW.DataSource = Enum.GetValues(typeof(BTWTarief));
         }
 
         private List<string> GetCBVerhuringValues()
@@ -97,6 +99,16 @@ namespace SE2Toets_PimJanissen
         {
             this.lbVerkopen.DataSource = null;
             this.lbVerkopen.DataSource = this.administratie.Verkopen;
+        }
+
+        private void btnOverzichtDatumbereik_Click(object sender, EventArgs e)
+        {
+            DateTime van = dtpOverzichtVan.Value;
+            DateTime tot = dtpOverzichtTot.Value;
+
+            List<IInkomsten> overzicht = this.administratie.Overzicht(van, tot);
+            
+            MessageBox.Show(string.Join(System.Environment.NewLine, overzicht));
         }
     }
 }

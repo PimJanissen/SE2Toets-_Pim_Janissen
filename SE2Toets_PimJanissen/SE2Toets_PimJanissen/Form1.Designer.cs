@@ -298,6 +298,7 @@
             this.btnOverzichtDatumbereik.TabIndex = 11;
             this.btnOverzichtDatumbereik.Text = "Toon overzicht voor datumbereik";
             this.btnOverzichtDatumbereik.UseVisualStyleBackColor = true;
+            this.btnOverzichtDatumbereik.Click += new System.EventHandler(this.btnOverzichtDatumbereik_Click);
             // 
             // label7
             // 
