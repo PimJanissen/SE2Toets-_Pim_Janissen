@@ -68,7 +68,33 @@ namespace SE2Toets_PimJanissen
             {
                 List<IInkomsten> overzicht = this.Overzicht(tarief);
 
-                writer.Write(string.Join(Environment.NewLine, overzicht));
+                decimal totaal = 0;
+                decimal totaalHoog = 0;
+                decimal totaalLaag = 0;
+
+                foreach (IInkomsten iInkomst in overzicht)
+                {
+                    writer.WriteLine(string.Format("{0} - {1} - EUR {2}", iInkomst.Tijdstip.ToString(), iInkomst.BTWTarief, iInkomst.Bedrag.ToString()));
+                    totaal += iInkomst.Bedrag;
+
+                    if (iInkomst.BTWTarief == BTWTarief.Hoog)
+                    {
+                        totaalHoog += iInkomst.Bedrag;
+                    }
+
+                    if (iInkomst.BTWTarief == BTWTarief.Laag)
+                    {
+                        totaalLaag += iInkomst.Bedrag;
+                    }
+                }
+
+                if (tarief == BTWTarief.Ongespecificeerd)
+                {
+                    writer.WriteLine("Totaal laag = EUR " + totaalLaag.ToString());
+                    writer.WriteLine("Totaal hoog = EUR " + totaalHoog.ToString());
+                }
+
+                writer.WriteLine("Totaal = EUR " + totaal.ToString());
             }
         }
     }
