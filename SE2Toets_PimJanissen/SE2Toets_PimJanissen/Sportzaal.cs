@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SE2Toets_PimJanissen
 {
-    class Sportzaal : Verhuur
+    public class Sportzaal : Verhuur
     {
         private BTWTarief btwTarief;
         private decimal prijsPerUur;
@@ -17,7 +17,7 @@ namespace SE2Toets_PimJanissen
         public Sportzaal(DateTime tijdstip, int urenVerhuurd)
             : base(tijdstip, urenVerhuurd)
         {
-            this.btwTarief = BTWTarief.Ongespecificeerd;
+            this.btwTarief = BTWTarief.Laag;
             this.prijsPerUur = 40m;
         }
 

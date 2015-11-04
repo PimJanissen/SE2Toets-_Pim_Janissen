@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Administratie.cs" />
     <Compile Include="BTWTarief.cs" />
+    <Compile Include="CompareIInkomstenByDateDescending.cs" />
     <Compile Include="Feestzaal.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

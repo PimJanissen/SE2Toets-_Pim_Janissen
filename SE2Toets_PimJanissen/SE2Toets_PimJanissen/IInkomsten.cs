@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SE2Toets_PimJanissen
 {
-    interface IInkomsten
+    public interface IInkomsten
     {
         decimal Bedrag { get; }
         BTWTarief BTWTarief { get; }

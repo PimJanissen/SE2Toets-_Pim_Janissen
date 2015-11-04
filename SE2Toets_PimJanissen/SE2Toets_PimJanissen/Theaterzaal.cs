@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SE2Toets_PimJanissen
 {
-    class Theaterzaal : Verhuur
+    public class Theaterzaal : Verhuur
     {
         private BTWTarief btwTarief;
         private decimal prijsPerUur;

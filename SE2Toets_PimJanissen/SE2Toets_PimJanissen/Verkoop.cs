@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SE2Toets_PimJanissen
 {
-    abstract class Verkoop : IInkomsten
+    public abstract class Verkoop : IInkomsten
     {
         public int Aantal { get; set; }
         public decimal Bedrag { get { return this.Prijs * this.Aantal;} }
@@ -17,6 +17,7 @@ namespace SE2Toets_PimJanissen
         public Verkoop(int aantal)
         {
             this.Aantal = aantal;
+            this.Tijdstip = DateTime.Now;
         }
 
         public override string ToString()

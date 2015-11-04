@@ -1,0 +1,7 @@
+C:\Users\gebruiker-pc\Documents\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+C:\Users\gebruiker-pc\Documents\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\bin\Debug\Tests.dll
+C:\Users\gebruiker-pc\Documents\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\bin\Debug\Tests.pdb
+C:\Users\gebruiker-pc\Documents\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\bin\Debug\SE2Toets_PimJanissen.exe
+C:\Users\gebruiker-pc\Documents\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\bin\Debug\SE2Toets_PimJanissen.pdb
+C:\Users\gebruiker-pc\Documents\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\obj\Debug\Tests.dll
+C:\Users\gebruiker-pc\Documents\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\obj\Debug\Tests.pdb

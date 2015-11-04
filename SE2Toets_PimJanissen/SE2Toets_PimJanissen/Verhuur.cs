@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SE2Toets_PimJanissen
 {
-    abstract class Verhuur : IInkomsten
+    public abstract class Verhuur : IInkomsten
     {
         public int UrenVerhuurd { get; set; }
         public decimal Bedrag { get { return this.UrenVerhuurd * this.PrijsPerUur; } }

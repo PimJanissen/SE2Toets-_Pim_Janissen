@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SE2Toets_PimJanissen
 {
-    class Administratie
+    public class Administratie
     {
         public List<Verkoop> Verkopen { get; private set; }
 
@@ -26,6 +26,34 @@ namespace SE2Toets_PimJanissen
         public void VoegToe(Verkoop verkoop)
         {
             this.Verkopen.Add(verkoop);
+        }
+
+        public List<IInkomsten> Overzicht(DateTime van, DateTime tot)
+        {
+            List<IInkomsten> overzicht = new List<IInkomsten>();
+            overzicht.AddRange(this.Verhuringen);
+            overzicht.AddRange(this.Verkopen);
+
+            overzicht = overzicht.Where(i => i.Tijdstip.CompareTo(tot) <= 0 && i.Tijdstip.CompareTo(van) >= 0).ToList();
+            overzicht.Sort(new CompareIInkomstenByDateDescending());
+
+            return overzicht;
+        }
+
+        public List<IInkomsten> Overzicht(BTWTarief tarief)
+        {
+            List<IInkomsten> overzicht = new List<IInkomsten>();
+            overzicht.AddRange(this.Verhuringen);
+            overzicht.AddRange(this.Verkopen);
+
+            if (tarief != BTWTarief.Ongespecificeerd)
+            {
+                overzicht = overzicht.Where(i => i.BTWTarief == tarief).ToList();
+            }
+            
+            overzicht.Sort(new CompareIInkomstenByDateDescending());
+
+            return overzicht;
         }
 
         public override string ToString()

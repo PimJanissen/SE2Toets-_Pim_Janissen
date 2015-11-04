@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SE2Toets_PimJanissen
 {
-    class SterkeDrank : Verkoop
+    public class SterkeDrank : Verkoop
     {
         private BTWTarief btwTarief;
         private decimal prijs;
