@@ -22,7 +22,7 @@ namespace SE2Toets_PimJanissen
 
         public override string ToString()
         {
-            return string.Format("Tijdstip: {0} || Duur: {1} uren || Prijs per uur: {2} || Bedrag: {3}", this.Tijdstip.ToString(), this.PrijsPerUur.ToString(), this.UrenVerhuurd.ToString(), this.Bedrag.ToString());
+            return string.Format("Tijdstip: {0} || Duur: {1} uren || Prijs per uur: {2} || Bedrag: {3}", this.Tijdstip.ToString(), this.UrenVerhuurd.ToString(), this.PrijsPerUur.ToString(), this.Bedrag.ToString());
         }
     }
 }

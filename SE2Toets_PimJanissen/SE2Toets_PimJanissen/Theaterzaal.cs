@@ -23,7 +23,7 @@ namespace SE2Toets_PimJanissen
 
         public override string ToString()
         {
-            return base.ToString();
+            return "Theaterzaal || " + base.ToString();
         }
     }
 }

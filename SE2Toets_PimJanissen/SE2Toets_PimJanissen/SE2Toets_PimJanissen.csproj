@@ -60,6 +60,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sportzaal.cs" />
     <Compile Include="SterkeDrank.cs" />
+    <Compile Include="Theaterzaal.cs" />
     <Compile Include="Verhuur.cs" />
     <Compile Include="Verkoop.cs" />
     <EmbeddedResource Include="Form1.resx">

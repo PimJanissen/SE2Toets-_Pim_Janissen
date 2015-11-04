@@ -20,12 +20,12 @@ namespace SE2Toets_PimJanissen
 
         public void VoegToe(Verhuur verhuur)
         {
-            throw new NotImplementedException();
+            this.Verhuringen.Add(verhuur);
         }
 
-        public void Voegtoe(Verkoop verkoop)
+        public void VoegToe(Verkoop verkoop)
         {
-            throw new NotImplementedException();
+            this.Verkopen.Add(verkoop);
         }
 
         public override string ToString()

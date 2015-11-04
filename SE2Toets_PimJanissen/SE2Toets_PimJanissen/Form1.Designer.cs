@@ -107,6 +107,7 @@
             this.btnNieuweVerhuringToevoegen.TabIndex = 3;
             this.btnNieuweVerhuringToevoegen.Text = "Toevoegen";
             this.btnNieuweVerhuringToevoegen.UseVisualStyleBackColor = true;
+            this.btnNieuweVerhuringToevoegen.Click += new System.EventHandler(this.btnNieuweVerhuringToevoegen_Click);
             // 
             // label1
             // 
@@ -163,6 +164,7 @@
             // lbVerhuringen
             // 
             this.lbVerhuringen.FormattingEnabled = true;
+            this.lbVerhuringen.HorizontalScrollbar = true;
             this.lbVerhuringen.Location = new System.Drawing.Point(6, 19);
             this.lbVerhuringen.Name = "lbVerhuringen";
             this.lbVerhuringen.Size = new System.Drawing.Size(300, 108);
@@ -181,6 +183,7 @@
             // lbVerkopen
             // 
             this.lbVerkopen.FormattingEnabled = true;
+            this.lbVerkopen.HorizontalScrollbar = true;
             this.lbVerkopen.Location = new System.Drawing.Point(6, 19);
             this.lbVerkopen.Name = "lbVerkopen";
             this.lbVerkopen.Size = new System.Drawing.Size(300, 108);
@@ -217,6 +220,7 @@
             this.btnNieuweVerkoopToevoegen.TabIndex = 7;
             this.btnNieuweVerkoopToevoegen.Text = "Toevoegen";
             this.btnNieuweVerkoopToevoegen.UseVisualStyleBackColor = true;
+            this.btnNieuweVerkoopToevoegen.Click += new System.EventHandler(this.btnNieuweVerkoopToevoegen_Click);
             // 
             // label4
             // 
