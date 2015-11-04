@@ -289,6 +289,7 @@
             this.btnOverzichtExporteer.TabIndex = 13;
             this.btnOverzichtExporteer.Text = "Exporteer";
             this.btnOverzichtExporteer.UseVisualStyleBackColor = true;
+            this.btnOverzichtExporteer.Click += new System.EventHandler(this.btnOverzichtExporteer_Click);
             // 
             // btnOverzichtDatumbereik
             // 

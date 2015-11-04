@@ -58,7 +58,7 @@ namespace SE2Toets_PimJanissen
                     verhuur = new Feestzaal(tijdstip, aantalUren);
                     break;
                 case "Sportzaal":
-                    verhuur = new Sportzaal(tijdstip, aantalUren);                    break;
+                    verhuur = new Sportzaal(tijdstip, aantalUren); break;
                 case "Theaterzaal":
                     verhuur = new Theaterzaal(tijdstip, aantalUren);
                     break;
@@ -107,8 +107,18 @@ namespace SE2Toets_PimJanissen
             DateTime tot = dtpOverzichtTot.Value;
 
             List<IInkomsten> overzicht = this.administratie.Overzicht(van, tot);
-            
+
             MessageBox.Show(string.Join(System.Environment.NewLine, overzicht));
+        }
+
+        private void btnOverzichtExporteer_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                BTWTarief tarief = (BTWTarief)cbOverzichtBTW.SelectedValue;
+                this.administratie.Exporteer(sfd.FileName, tarief);
+            }
         }
     }
 }

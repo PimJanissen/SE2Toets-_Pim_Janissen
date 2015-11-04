@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -50,7 +51,7 @@ namespace SE2Toets_PimJanissen
             {
                 overzicht = overzicht.Where(i => i.BTWTarief == tarief).ToList();
             }
-            
+
             overzicht.Sort(new CompareIInkomstenByDateDescending());
 
             return overzicht;
@@ -59,6 +60,16 @@ namespace SE2Toets_PimJanissen
         public override string ToString()
         {
             return string.Format("Er zijn momenteel {0} verkopen en {1} verhuringen", this.Verkopen.Count, this.Verhuringen.Count);
+        }
+
+        public void Exporteer(string path, BTWTarief tarief)
+        {
+            using (StreamWriter writer = new StreamWriter(path))
+            {
+                List<IInkomsten> overzicht = this.Overzicht(tarief);
+
+                writer.Write(string.Join(Environment.NewLine, overzicht));
+            }
         }
     }
 }
