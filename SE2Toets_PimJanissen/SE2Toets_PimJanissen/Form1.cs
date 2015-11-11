@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -114,6 +115,11 @@ namespace SE2Toets_PimJanissen
         private void btnOverzichtExporteer_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "Text file|*.txt|All files|*.*";
+            sfd.AddExtension = true;
+            sfd.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            sfd.OverwritePrompt = true;
+
             if (sfd.ShowDialog() == DialogResult.OK)
             {
                 BTWTarief tarief = (BTWTarief)cbOverzichtBTW.SelectedValue;
