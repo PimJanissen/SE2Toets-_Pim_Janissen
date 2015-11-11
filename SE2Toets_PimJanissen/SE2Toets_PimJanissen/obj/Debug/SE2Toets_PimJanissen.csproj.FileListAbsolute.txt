@@ -7,3 +7,12 @@ C:\Users\gebruiker-pc\Documents\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJaniss
 C:\Users\gebruiker-pc\Documents\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\SE2Toets_PimJanissen\obj\Debug\SE2Toets_PimJanissen.exe
 C:\Users\gebruiker-pc\Documents\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\SE2Toets_PimJanissen\obj\Debug\SE2Toets_PimJanissen.pdb
 C:\Users\gebruiker-pc\Documents\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\SE2Toets_PimJanissen\obj\Debug\SE2Toets_PimJanissen.Form1.resources
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\SE2Toets_PimJanissen\bin\Debug\SE2Toets_PimJanissen.exe.config
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\SE2Toets_PimJanissen\obj\Debug\SE2Toets_PimJanissen.exe
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\SE2Toets_PimJanissen\obj\Debug\SE2Toets_PimJanissen.pdb
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\SE2Toets_PimJanissen\bin\Debug\SE2Toets_PimJanissen.exe
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\SE2Toets_PimJanissen\bin\Debug\SE2Toets_PimJanissen.pdb
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\SE2Toets_PimJanissen\obj\Debug\SE2Toets_PimJanissen.csprojResolveAssemblyReference.cache
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\SE2Toets_PimJanissen\obj\Debug\SE2Toets_PimJanissen.Form1.resources
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\SE2Toets_PimJanissen\obj\Debug\SE2Toets_PimJanissen.Properties.Resources.resources
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\SE2Toets_PimJanissen\obj\Debug\SE2Toets_PimJanissen.csproj.GenerateResource.Cache

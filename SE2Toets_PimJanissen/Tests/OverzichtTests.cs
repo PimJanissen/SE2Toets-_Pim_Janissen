@@ -8,6 +8,12 @@ namespace Tests
     [TestClass]
     public class OverzichtTests
     {
+
+        // Zet je test data als statische variabelen om asserts gemakkelijker te maken
+
+        // Test of de teruggegeven aantallen ook kloppen, en niet alleen de eigenschappen
+        // van elk teruggegeven resultaat.
+
         Administratie administratie;
         [TestInitialize]
         public void CreateOverzichtTests()
@@ -24,10 +30,17 @@ namespace Tests
             administratie.VoegToe(new SterkeDrank(4));
             administratie.VoegToe(new SterkeDrank(2));
             administratie.VoegToe(new SterkeDrank(3));
+
+            // Wat als de waarden bij benadering oke moeten zijn?
+            // Assert.AreEqual(0.2, 0.5, 0.2);
+
+            // OF
+            // Assert.IsTrue( verschil < delta );
         }
         [TestMethod]
         public void TestOverzichtMetAlleenLageBTWTarieven()
-        {
+        { // Goed: elke test slechts 1 deel laten testen.
+
             List<IInkomsten> overzicht = administratie.Overzicht(BTWTarief.Laag);
 
             Assert.AreEqual(overzicht.Find(i => i.BTWTarief != BTWTarief.Laag), null);
@@ -45,6 +58,8 @@ namespace Tests
         public void TestOverzichtMetAlleBTWTarieven()
         {
             List<IInkomsten> overzicht = administratie.Overzicht(BTWTarief.Ongespecificeerd);
+
+            // testen dat het aantal gelijk is aan alles dat je erin gestoken hebt.
 
             Assert.AreEqual((overzicht.Find(i => i.BTWTarief == BTWTarief.Hoog) != null) && (overzicht.Find(i => i.BTWTarief == BTWTarief.Laag) != null), true);
         }

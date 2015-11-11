@@ -9,6 +9,8 @@ namespace SE2Toets_PimJanissen
 {
     public class Administratie
     {
+        // Eleganter als met interface gewerkt.
+        // private set was niet nodig.
         public List<Verkoop> Verkopen { get; private set; }
 
         public List<Verhuur> Verhuringen { get; private set; }
@@ -21,16 +23,17 @@ namespace SE2Toets_PimJanissen
 
         public void VoegToe(Verhuur verhuur)
         {
-            this.Verhuringen.Add(verhuur);
+           this.Verhuringen.Add(verhuur);
         }
 
         public void VoegToe(Verkoop verkoop)
         {
-            this.Verkopen.Add(verkoop);
+          this.Verkopen.Add(verkoop);
         }
 
         public List<IInkomsten> Overzicht(DateTime van, DateTime tot)
         {
+            // checken op geldige datum, beter hier?
             List<IInkomsten> overzicht = new List<IInkomsten>();
             overzicht.AddRange(this.Verhuringen);
             overzicht.AddRange(this.Verkopen);

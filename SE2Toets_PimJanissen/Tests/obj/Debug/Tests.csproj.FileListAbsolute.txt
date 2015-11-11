@@ -5,3 +5,11 @@ C:\Users\gebruiker-pc\Documents\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJaniss
 C:\Users\gebruiker-pc\Documents\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\bin\Debug\SE2Toets_PimJanissen.pdb
 C:\Users\gebruiker-pc\Documents\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\obj\Debug\Tests.dll
 C:\Users\gebruiker-pc\Documents\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\obj\Debug\Tests.pdb
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\bin\Debug\Tests.dll
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\bin\Debug\Tests.pdb
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\bin\Debug\SE2Toets_PimJanissen.exe
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\bin\Debug\SE2Toets_PimJanissen.pdb
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\obj\Debug\Tests.dll
+D:\GitHub\SE2Toets-_Pim_Janissen\SE2Toets_PimJanissen\Tests\obj\Debug\Tests.pdb

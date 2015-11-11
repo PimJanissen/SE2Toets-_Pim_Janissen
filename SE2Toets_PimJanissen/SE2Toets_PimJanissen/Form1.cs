@@ -34,6 +34,7 @@ namespace SE2Toets_PimJanissen
                 typeof(Feestzaal).Name,
                 typeof(Sportzaal).Name,
                 typeof(Theaterzaal).Name
+               
             };
         }
 
