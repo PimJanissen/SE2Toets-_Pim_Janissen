@@ -9,16 +9,15 @@ namespace SE2Toets_PimJanissen
 {
     public class Administratie
     {
-        // Eleganter als met interface gewerkt.
-        // private set was niet nodig.
-        public List<Verkoop> Verkopen { get; private set; }
+        private List<IInkomsten> iInkomsten;
 
-        public List<Verhuur> Verhuringen { get; private set; }
+        public List<Verkoop> Verkopen { get { return iInkomsten.Where(i => i.GetType() == typeof(Verkoop)).Cast<Verkoop>().ToList(); } }
+
+        public List<Verhuur> Verhuringen { get { return iInkomsten.Where(i => i.GetType() == typeof(Verhuur)).Cast<Verhuur>().ToList(); } }
 
         public Administratie()
         {
-            this.Verkopen = new List<Verkoop>();
-            this.Verhuringen = new List<Verhuur>();
+            this.iInkomsten = new List<IInkomsten>();
         }
 
         public void VoegToe(Verhuur verhuur)
@@ -33,15 +32,20 @@ namespace SE2Toets_PimJanissen
 
         public List<IInkomsten> Overzicht(DateTime van, DateTime tot)
         {
-            // checken op geldige datum, beter hier?
-            List<IInkomsten> overzicht = new List<IInkomsten>();
-            overzicht.AddRange(this.Verhuringen);
-            overzicht.AddRange(this.Verkopen);
+            if (DateTime.Compare(van, tot) != 1)
+            {
+                // checken op geldige datum, beter hier?
+                List<IInkomsten> overzicht = new List<IInkomsten>();
+                overzicht.AddRange(this.Verhuringen);
+                overzicht.AddRange(this.Verkopen);
 
-            overzicht = overzicht.Where(i => i.Tijdstip.CompareTo(tot) <= 0 && i.Tijdstip.CompareTo(van) >= 0).ToList();
-            overzicht.Sort(new CompareIInkomstenByDateDescending());
+                overzicht = overzicht.Where(i => i.Tijdstip.CompareTo(tot) <= 0 && i.Tijdstip.CompareTo(van) >= 0).ToList();
+                overzicht.Sort(new CompareIInkomstenByDateDescending());
 
-            return overzicht;
+                return overzicht;
+            }
+
+            throw new ArgumentException("De datum 'van' dient eerder te zijn als de datum 'tot'.");
         }
 
         public List<IInkomsten> Overzicht(BTWTarief tarief)

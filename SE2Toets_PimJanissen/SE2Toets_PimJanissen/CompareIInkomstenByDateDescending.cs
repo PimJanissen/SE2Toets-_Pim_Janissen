@@ -10,7 +10,19 @@ namespace SE2Toets_PimJanissen
     {
         public int Compare(IInkomsten first, IInkomsten second)
         {
-            return -1 * first.Tijdstip.CompareTo(second.Tijdstip);
+            int returnValue = -1 * first.Tijdstip.CompareTo(second.Tijdstip);
+
+            if (returnValue == 0)
+            {
+                returnValue = -1 * first.Bedrag.CompareTo(second.Bedrag);
+                
+                if (returnValue == 0)
+                {
+                    returnValue = -1 * first.BTWTarief.CompareTo(second.BTWTarief);
+                }
+            }
+
+            return returnValue;
 
             // belangrijke opmerking: implementatie is niet volledig.
             // Op dit moment zijn 2 inkomsten gelijk als ze hetzelfde tijdstip hebben...
